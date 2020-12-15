@@ -16,7 +16,7 @@ You will need to download the vitae, tinytex, and tibble packages from R. You mi
 ## Edit the markdown file, here are some cheats
 ** before and after a word or phrase makes them **bold**
 
-* before and after a word or phrase makes them *italicized*
+"*" before and after a word or phrase makes them *italicized*
 
 "#" is a level one heading
 
@@ -24,7 +24,7 @@ You will need to download the vitae, tinytex, and tibble packages from R. You mi
 
 "###" is a level 3 heading
 
-"[title](https://www.example.com)" is a link
+"[title](https://www.example.com)" Surrond "title" with square brackets followed by (https://www.example.com) is a link
 
 ## Think of WWWWWH
 Who, what, when, where, why, and how
