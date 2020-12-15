@@ -2,12 +2,12 @@
 name: Nathalie
 surname: Germain
 position: "Diplômée de BA en psychologie, coordonnatrice de recherche"
-address: "304-2390, avenue Madison, Montréal, QC, H4B 2T6"
+address: "avenue Madison, Montréal, QC, H4B 2T6"
 qualifications: BA
-phone: +1 514 716 2095
-#www: gitlab.pavlovia.org/LMD_nat
+phone: +1 514 716 XXXX
+#www: 
 email: "nathalie.germain@mail.concordia.ca"
-#twitter: mariecurie
+#twitter: 
 #github:
 headcolor: 414141
 profilepic: headshot1.jpeg
