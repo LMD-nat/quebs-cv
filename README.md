@@ -8,6 +8,8 @@ Downloaded from [Awesome-CV](https://github.com/posquit0/Awesome-CV)
 
 License: [LPPL v1.3c](http://www.latex-project.org/lppl)
 
+Credit to Sean Devine for being a general smartypants and for helping me write and create my first CV in markdown.
+
 ## Step one to a Quebs French CV
 Create and R project with the .md file, a headshot photo, and the .cls file.
 
