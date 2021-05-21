@@ -5,14 +5,14 @@ position: "Diplômée de BA en psychologie, coordonnatrice de recherche"
 address: "avenue Madison, Montréal, QC, H4B 2T6"
 qualifications: BA
 phone: +1 514 716 XXXX
-#www: 
+#www: https://github.com/LMD-nat/LMD-nat
 email: "nathalie.germain@mail.concordia.ca"
 #twitter: 
 #github:
 headcolor: 414141
 profilepic: headshot1.jpeg
 linkedin: nathalie-germain
-bibliography: "~/Desktop/SDevine/test.bib"
+bibliography:
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
