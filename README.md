@@ -1,4 +1,4 @@
-# quebs-cv = Québecois CV
+# Québs CV
 A Québecois French ⚜ CV for young academics written in markdown 
 
 ## Credits: 
