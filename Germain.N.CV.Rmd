@@ -4,10 +4,10 @@ surname: Germain
 position: "Candidate à la maîtrise en épidemiologie à Université Laval"
 # address: "7141 Sherbrooke St W, Montreal, Quebec H4B 1R6"
 qualifications: BA
-phone: +1 514 716 2095
+phone: +1 514 716 XXXX
 www: github.com/LMD-nat
 email: "nathalie.germain.5@ulaval.ca"
-#twitter: mariecurie
+#twitter: 
 #github: LMD-nat
 headcolor: 414141
 # profilepic: nathalie_invite.jpg
