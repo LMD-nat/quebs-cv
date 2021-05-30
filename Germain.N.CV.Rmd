@@ -1,18 +1,18 @@
 ---
 name: Nathalie
 surname: Germain
-position: "Diplômée de BA en psychologie, coordonnatrice de recherche"
-address: "avenue Madison, Montréal, QC, H4B 2T6"
+position: "Candidate à la maîtrise en épidemiologie à Université Laval"
+# address: "7141 Sherbrooke St W, Montreal, Quebec H4B 1R6"
 qualifications: BA
-phone: +1 514 716 XXXX
-#www: https://github.com/LMD-nat/LMD-nat
-email: "nathalie.germain@mail.concordia.ca"
-#twitter: 
-#github:
+phone: +1 514 716 2095
+www: github.com/LMD-nat
+email: "nathalie.germain.5@ulaval.ca"
+#twitter: mariecurie
+#github: LMD-nat
 headcolor: 414141
-profilepic: headshot1.jpeg
-linkedin: nathalie-germain
-bibliography:
+# profilepic: nathalie_invite.jpg
+# linkedin: nathalie-germain
+# bibliography: ""
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -25,20 +25,23 @@ library(tinytex)
 ```
 
 # Sommaire
- * Baccalauréat en psychologie de l'Université Concordia avec expérience en coordination de recherche
- * Intérêts de recherche: stratégies de prise de décision, changement de concept, psychologie du personnel 
- * Autres intérêts: Science ouverte, graphisme et beaux-arts, karaté Kyokushin
+
+ * Candidate à la maîtrise en épidemiologie, Université Laval
+ * BA en psychologie, coordonnatrice de recherche en domaine de psychologie
+ * Intérêts de recherche: stratégies de prise de décision, changement de concept, système de santé 
+ * Autres intérêts: Sciences ouvertes, programmation informatique, graphisme et beaux-arts, karaté Kyokushin
 
 # Formation et diplômes
 
 ```{r}
 library(tibble)
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "Maitrise en épidemiologie avec mémoire", "2021-2023", "Université Laval", "Québec, Canada", 
   "Baccalauréat en psychologie, cheminement honors. GPA : 3.84, Graduation avec distinctions", "2016-2019", "Université Concordia", "Montréal, Canada",
-  "Diplôme d’études collégiales – programme arts visuels. Étudiante-athlète, équipe féminine de rugby", "2013-2016", "Collège John Abbott", "Montréal, Canada"
+  "Diplôme d’études collégiales – programme arts visuels. Étudiante-athlète, équipe féminine de rugby", "2013-2016", "Collège John Abbott", "Montréal, Canada",
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(Degree, Year, Institution, Where,)
 ```
 
 # Prix et distinctions
@@ -47,10 +50,9 @@ tribble(
 tribble( ~ Org, ~ Title, ~ Desc, ~ Year, 
 "Société Canadienne de Psychologie", "Certificat d’excellence universitaire", "ayant présenté un de les meilleurs travaux (dissertation, maîtrise et thèse) au niveau du baccalauréat à l'Université Concordia", "2019",
 "Université Concordia", "Première place (2019), Deuxième place (2018)", "présenter une méthodologie en équipe pour le concours Inter-University Psychology Case Competition", "2018 & 2019",
-"Université Concordia", "Liste du doyen", "ayant maintenue une GPA de 3.75 annuelle", "2016-2017, 2018-2019",
+"Université Concordia", "Liste du doyen", "ayant maintenue un GPA annuel de 3.75 ", "2016-2017, 2018-2019",
 "Université Concordia", "Garnet Key Society Merit Award", "une contribution exceptionnelle à la 60e Garnet Key Society", "2018",
-"Université Concordia", "Shuffle Entrance Scholarship", "réussite académique exceptionnelle (Bourse de 1000$)", "2016",
-"Collège John Abbott", "Islanders Certificate of Academic Achievement", "ayant maintenue une moyenne générale de plus de 80% comme étudiante-athlète", "2016") %>% 
+"Université Concordia", "Shuffle Entrance Scholarship", "réussite académique exceptionnelle (Bourse de 1000$)", "2016") %>% 
   detailed_entries(
     with=Title, 
     what=glue::glue("Remis(e) pour: {Desc}."), 
@@ -58,26 +60,19 @@ tribble( ~ Org, ~ Title, ~ Desc, ~ Year,
     when=Year
     )
 ```
-# Thèse d'Honneur
+
+# Publications et manuscrits en préparation
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
 \setlength{\parskip}{8pt}
 \noindent
 
-Comparing Gestural Communication among 14–Month–Old Bilinguals and Monolinguals 
-  
-  Superviseure : **Dre. Krista Byers-Heinlen**                               
-  Préinscription sur Open Science Framework : https://osf.io/gh5q8/
+Devine, S., **Germain, N.**, Ehrlich, S., & Eppinger, B. (2021). Changes in The Prevalence Of Thin Bodies 
+Biases Young Womens’ Judgements about Body Size (En préparation). Préinscription : https://osf.io/e28nd
 
-# Publications
-\setlength{\parindent}{-0.2in}
-\setlength{\leftskip}{0.2in}
-\setlength{\parskip}{8pt}
-\noindent
+**Germain, N.**, Meltzer, A., & Poulin-Dubois, D. (2021). A comparison of parent-report gestures in monolingual and bilingual infants (En préparation).
 
-Devine, S., **Germain, N.**, Ehrlich, S., & Eppinger, B. (2020). Does prevalence-induced concept change affect body image in young women? Registered Report. Psychonomic Bulletin & Review (En préparation). Préinscription : https://osf.io/e28nd
-
-**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2020). Gesture Development in Infancy: Effects of Gender but not Bilingualism. Infant Behavior and Development (Soumis). https://psyarxiv.com/jhua6/
+**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2021). Gesture Development in Infancy: Effects of Gender but not Bilingualism (Soumis à *Infancy*). https://psyarxiv.com/jhua6/. Préinscription : https://osf.io/gh5q8/
 
 # Présentations
 \setlength{\parindent}{-0.2in}
@@ -86,35 +81,35 @@ Devine, S., **Germain, N.**, Ehrlich, S., & Eppinger, B. (2020). Does prevalence
 \noindent
 
 \vspace{1pt}
-## Présentations orales 
-**Germain, N.** (2020, 21 février). Gestural communication among monolingual and bilingual infants. **Bilingualism Interest Group**, Concordia University, Montreal, QC, Canada.  
+## Présentations orales
 
-\vspace{12pt}
-## Présentations d’affiche
-**Germain, N.**, Friend, M. J., Zesiger, P., & Poulin-Dubois, D. (2021, virtuel). Do Bilingual Infants Gesture More Than Monolingual Infants? Comparing Parent-Report Gestures Across Five Language Groups. Soumis dans le cadre de la **Virtual Biennial Meeting of the Society for Research in Child Development**. [Conférence internationale]
+**Germain, N.**, Profitt, M., & Eppinger, B. (2021, 23 avril). Individual differences in decision making:   effects of Covid-19. **CRDH Cognition BrownBag**, Université Concordia, Montréal, QC. 
+
+**Germain, N.** (2020, 21 février). Gestural communication among monolingual and bilingual infants. **Bilingualism Interest Group**, Université Concordia, Montréal, QC.  
+
+\vspace{1pt}
+## Présentations d’affiche recentes
+
+Devine, S., **Germain, N.**, Ehrlich, S. & Eppinger, B. (2021, juin). Changes in the prevalence of thin bodies biases young women's judgements about body size. Affiche acceptée à la **conference annuele de la Société Canadienne des Sciences du Cerveau, du Comportement, et de la Cognition (SCSCCC)**. Montréal, QC. [Conférence nationale]
+
+Société Canadienne des Sciences du Cerveau, du Comportement, et de la Cognition (SCSCCC)
+**Germain, N.**, Meltzer, A. & Poulin-Dubois, D. (2021, mai). Gestural Communication Among Monolingual and Bilingual Infants. Affiche presenté à la **2021 Association for Pyschological Science Virtual Convention**. Washington, DC. [Conférence internationale]
+
+**Germain, N.**, Profitt, M. & Eppinger, B. (2021, mars). Individual differences in decision making:   effects of Covid-19. Affiche presenté à la **Centre for Research in Human Development (CRDH) Annual Conference 2021**. Université Concordia. Montréal, QC. [Conférence provinciale]
 
 **Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2020, juillet). Does bilingualism affect gesture use at 14 months? Recherche acceptée par la **International Conference of Infant Studies (ICIS)**. Glasgow, Écosse. [Conférence internationale, affiche rétractée]
 
-**Germain, N.**, Poulin-Dubois, D. (2020, mars). Une étude comparative de la communication gestuelle de nourrissons bilingues et unilingues. Recherche acceptée par la **conférence annuelle de la Société Québécoise pour la Recherche en Psychologie (SQRP)**. Gatineau, QC. [Conférence provinciale, annulé à cause de Covid-19]
-
-**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2019, avril). Gender, but Not Second Language Exposure, Influences Gesture use at 14 Months. Recherche présentée à la **Psychology Undergraduate Research Expo**. Université Concordia. Montréal, QC. [Conférence locale]
+**Germain, N.**, Poulin-Dubois, D. (2020, mars). Une étude comparative de la communication gestuelle de nourrissons bilingues et unilingues. Recherche acceptée par la **conférence annuelle de la Société Québécoise pour la Recherche en Psychologie (SQRP)**. Gatineau, QC. [Conférence provinciale, annulée à cause de Covid-19]
 
 **Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2019, mars). Do bilingual babies gesture more than monolinguals as they’re learning to speak? Affiche presenté à la **PsychoShorts Annual Conference**. Université d'Ottawa. Ottawa, ON. [Conférence nationale]
 
-**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2019, février). Do bilingual babies gesture more than monolinguals as they’re learning to speak? Affiche presenté à la **Center for Research in Human Development Annual Conference**. Université Concordia. Montréal, QC. [Conférence locale]
-
-**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2018, octobre). Comparing gestural communication among 14-month-old bilinguals and monolinguals. Affiche presenté à la **Diverse Perspectives on Bilingualism Conference**. Université Concordia. Montréal, QC. [Conférence locale]
-
-
-# Expériences de travail
+# Expériences de travail en recherche
 
 ```{r}
 tribble(
   ~ Lab, ~ Role, ~ Desc1, ~ Desc2, ~ When, ~ Where, 
-  "Lifespan and Decision Making Laboratory", "Coordonnatrice de recherche, Superviseur : Dr Ben Eppinger","Design, réalisation et rédaction d’études comportementales en psychologie", "Analyse statistique des données recueillies, programmation des tâches, recrutement", "Août 2020 – Actuel", "Université Concordia",
-  "Le laboratoire de recherche sur le développement du langage et de la cognition", "Coordonnatrice de recherche, Superviseure : Dre Diane Poulin-Dubois","Allocation des tâches, ressources et projets de recherches aux étudiants bénévoles, recrutement", "Administration financière : système de paie, gestion du budget et fonds de recherche", "Juillet 2019 – Août 2020", "Université Concordia",
-  "Rent-A-Geek Tutoring", "Tutorat en statistique","Fournir une service de tutorat pour cours de statistiques et méthodologie (niveau universitaire)", "Guider les étudiants sur le formatage apa et la rédaction des devoirs", "Août 2019 – Août 2020", "Superviseure: Eva Sabrina Nziza",
-"Brasserie Beau’s All-Natural Brewing Company", "Ambassadrice division", "Promotion de la marque et gestion d’évènements au Québec et en Ontario", "Établissement de relations d’affaire avec vendeurs, particuliers et microbrasseries", "Mai 2018 – Août 2020", "Superviseur: Christopher Stewart"
+  "Lifespan and Decision Making Laboratory", "Coordonnatrice de recherche, Superviseur : Dr Ben Eppinger","Design, réalisation et rédaction d’études comportementales en psychologie", "Analyse statistique des données recueillies, programmation des tâches, recrutement", "Août 2020 – Août 2021", "Université Concordia",
+  "Le laboratoire de recherche sur le développement du langage et de la cognition", "Coordonnatrice de recherche, Superviseure : Dre Diane Poulin-Dubois","Allocation des tâches, ressources et projets de recherches aux étudiants bénévoles, recrutement", "Administration financière : système de paie, gestion du budget et fonds de recherche", "Juillet 2019 – Août 2020", "Université Concordia"
 ) %>% 
   detailed_entries(
     with=Lab, 
@@ -124,18 +119,13 @@ tribble(
     where=Where
     )
 ```
-\newpage
-# Expériences de bénévolat et de direction
+# Expériences de bénévolat et de direction en recherche
 
 ```{r}
 tribble(
   ~ What,~ Role, ~ Desc1, ~ When, ~ Where, 
   "Concordia Journal Of Accessible Psychology","Coordonnatrice des affaires sociales et publiques, Superviseure: Alexa Ruel", "Promotion virtuelle du journal étudiant annuel du département de psychologie, l’organisation des évènements virtuels", "Août 2020 – Actuel","Université Concordia",
   "Laboratoire de recherche sur l’enfance de Concordia","Assistante de recherche, Superviseure : Dre Krista Byers-Heinlein", "Gestion des entrées de données et participation à la cueillette de donnée auprès des enfants et parents participant", "Juillet 2017 – Juin 2019","Université Concordia",
-  "Concordia Undergraduate Psychology Association (CUPA)","Coordonnatrice sociale", "Planification d’évènements sociaux et recherche de commanditaires", "Août 2018 – Août 2019", "Université Concordia",
-  "Concordia Garnet Key Society (60e)","Secrétaire", "Production de l’ordre du jour et tenue de comptes rendus de réunions, contribution au rayonnement de la société lors de divers évènements", "Avril 2017 – Mai 2018", "Université Concordia",
-  "West Island Art Hive","Bénévole", "Gestion des médias sociaux et tâches diverses au sein du studio d’art à but non lucratif", "Octobre 2016 – Juin 2018", "Superviseure : Nancy Norena",
-  "Nova West Island","Bénévole", "Organisation d’activités dans une résidence pour aînés vivant avec un déficit cognitif", "Février 2015 – Novembre 2015", "Superviseure : Sabrina Allarie "
 ) %>% 
   detailed_entries(
     with=What,
@@ -150,14 +140,12 @@ tribble(
 
 ```{r}
 tribble(
-  ~ What, ~ Desc1, ~ Desc2, ~ Desc3,
-  "Logiciels","Analyses statistiques : IBM SPSS, JASP, R (packages : dplyr, ggplot, markdown, psych & lmer), jamovi", "Manipulation d’images : Adobe Photoshop & GIMP", "Analyses de données comportementales : Tobii Studio, SALT, ELAN & Mangold",
-  "Langues de programmation", "Html (débutant)", "JavaScript (JPsych) (débutant)", "Python (PsychoPy) (débutant)",
-  "Science Ouverte", "Version Control des logiciels et sites web : Git (via GitHub et GitLab)", "Création des préinscriptions", "Entreposage des données brutes et codebooks sur Open Science Framework (OSF)"
+  ~ What, ~ Desc1, ~ Desc2,  ~ Desc3, ~ Desc4,
+  "Langues de programmation", "R (avancée)", "Html, CSS & JavaScript (JsPsych) (intermédiaire)", "Python (débutant)", "Git, TeX & Markdown (débutant)"
   ) %>% 
   detailed_entries(
     with=What,
-    why=c(Desc1, Desc2, Desc3)
+    why=c(Desc1, Desc2, Desc3, Desc4)
     )
 
 ```
