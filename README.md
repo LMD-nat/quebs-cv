@@ -8,10 +8,8 @@ Downloaded from [Awesome-CV](https://github.com/posquit0/Awesome-CV)
 
 License: [LPPL v1.3c](http://www.latex-project.org/lppl)
 
-Credit to Sean Devine for helping me write and create my first CV in markdown!
-
-## Step one to a Quebs French CV
-Create and R project with the .md file, a headshot photo (optional), and the .cls file.
+## Setup
+Create an R project with the .md file, a headshot photo (optional), and the .cls file.
 
 You will need to download the vitae, tinytex, and tibble packages from R. You might also need to download [LaTexiT](https://download.cnet.com/LaTeXiT/3000-2053_4-66890.html)
 
