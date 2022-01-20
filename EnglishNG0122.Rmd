@@ -1,0 +1,149 @@
+---
+name: Nathalie
+surname: Germain
+#address:
+qualifications: BA
+phone: +1 514 716 XXXX
+www: github.com/LMD-nat
+email: "nathalie.germain.5@ulaval.ca"
+#twitter: 
+#github: LMD-nat
+headcolor: 1b1b1b
+# profilepic: nathalie_invite.jpg
+# linkedin: nathalie-germain
+# bibliography: ""
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tinytex)
+install.packages('vitae')
+```
+
+# Summary
+
+ * Master of Science student in epidemiology at Université Laval in Québec-City, Canada.
+ * Bilingual in English (*native*) and French (*fluent*).
+ * I am currently researching the role that caregivers play in reducing early re-admissions to the hospital among elderly patients in Québec.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "Master of Science student, Epidemiology with thesis", "2021-2023", "Université Laval", "Québec, Canada", 
+  "Bachelor of Arts in Psychology, honours programme. Graduation with distinction, Arts and Science Dean's List (2016-2017, 2018-2019)", "2016-2019", "Concordia University", "Montréal, Canada",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where,)
+```
+
+# Awards and honours
+
+```{r}
+tribble( ~ Org, ~ Title, ~ Desc, ~ Year,
+"Université Laval", "Bourse de recrutement Joseph-Demers", "academic excellence and for study protocol proposed for master's thesis work ($7,500 Award)", "2021",         
+"Canadian Psychological Association", "Certificate of Academic Excellence", "having presented one of the best theses at the baccalaureate level at Concordia University", "2019",
+"Concordia University", "Garnet Key Society Merit Award", "an outstanding contribution to the 60th Garnet Key Society", "2018",
+"Concordia University", "Shuffle Entrance Scholarship", "outstanding academic achievement ($1,000 Award)", "2016") %>% 
+  detailed_entries(
+    with=Title, 
+    what=glue::glue("Awarded for: {Desc}."), 
+    where=Org, 
+    when=Year
+    )
+```
+
+# Peer reviewed publications
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
+
+Devine, S., **Germain, N.**, Ehrlich, S., & Eppinger, B. (2022). Changes in The Prevalence Of Thin Bodies 
+Biases Young Womens’ Judgements about Body Size. *Psychological Science* (In press). Project pre-registration : https://osf.io/e28nd
+
+**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2021). Gesture Development in Infancy: Effects of Gender but not Bilingualism. *Infancy* (In press). Project pre-registration : https://osf.io/gh5q8/
+
+# Presentations
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
+
+\vspace{1pt}
+## Invited talks
+
+**Germain, N.**, Profitt, M., & Eppinger, B. (2021, April 23rd). Individual differences in decision making:   effects of Covid-19. **CRDH Cognition BrownBag**, Concordia University, Montréal, QC. 
+
+**Germain, N.**, Poulin-Dubois, D. (2020, February 21st). Gestural communication among monolingual and bilingual infants. **Bilingualism Interest Group**, Concordia University, Montréal, QC.  
+
+\vspace{1pt}
+## Selected poster presentations
+
+**Germain, N.**, Archambault, P. M. (2022, March). Fardeau des proches-aidants des personnes aînées en transition de l'hôpital à la communauté : une série chronologique interrompue. Poster accepted to the **Bâtir ensemble le système de santé apprenant du Québec Symposium**. Virtual conference, Longeuil, QC. [Provincial conference]
+
+Devine, S., **Germain, N.**, Ehrlich, S. & Eppinger, B. (2021, June). Changes in the prevalence of thin bodies biases young women's judgements about body size. Poster presented at the **Annual conference of the Canadian Society for Brain, Behaviour and Cognitive Science (CSBBCS)**. Virtual conference, Montréal, QC. [National conference]
+
+**Germain, N.**, Meltzer, A. & Poulin-Dubois, D. (2021, May). Gestural Communication Among Monolingual and Bilingual Infants. Poster presented at the **2021 Association for Pyschological Science Virtual Convention**. Washington, DC. [International conference]
+
+**Germain, N.**, Profitt, M. & Eppinger, B. (2021, March). Individual differences in decision-making: effects of Covid-19. Poster presented at the **Centre for Research in Human Development (CRDH) Annual Conference 2021**. Concordia University. Montréal, QC. [Provincial conference]
+
+
+**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2019, March). Do bilingual babies gesture more than monolinguals as they’re learning to speak? Poster presented at the **PsychoShorts Annual Conference**. University of Ottawa. Ottawa, ON. [National conference]
+
+\vspace{1pt}
+## Workshops
+
+**Germain, N.**, (July 9th, 2021). JavaScript for Psychology : using JsPsych and Cognition.run to make simple experiments. Concordia University. Montréal, QC. [Virtual workshop]. Workshop material : https://github.com/LMD-nat/tutorial_jsPsych
+
+
+# Work experience
+
+```{r}
+tribble(
+  ~ Lab, ~ Role, ~ Desc1, ~ Desc2, ~ When, ~ Where, 
+"Lifespan and Decision Making Laboratory", "Research Coordinator, Supervisor: Dr. Ben Eppinger", "Tasked with designing and conducting behavioural studies relating to cognition.", "Performed analyses of collected data and recruitment of participants.", "August 2020 – August 2021", "Concordia University",
+"Le laboratoire de recherche sur le développement du langage et de la cognition", "Research Coordinator, Supervisor: Dr. Diane Poulin-Dubois", "Assigned resources and research projects to student volunteers and conducted recruitment.", "Perfoemd financial administration: operating lab payroll, and management of budget and research funds.", "July 2019 – August 2020", "Concordia University",
+"Rent-a-Geek Tutoring", "Statistics tutor", "Reviewed concepts in basic and advanced statistics courses at Concordia with students.", "Assisted students in writing, correcting, and excecuting analyses.", "August 2019 – August 2020", "Montréal, Canada"
+) %>% 
+  detailed_entries(
+    with=Lab, 
+    what=Role, 
+    why=c(Desc1, Desc2),
+    when=When, 
+    where=Where
+    )
+```
+# Volunteer experience
+
+```{r}
+tribble(
+  ~ What,~ Role, ~ Desc1, ~ When, 
+"Concordia Journal Of Accessible Psychology","Editor, Coordinator of Social and Public Affairs", "Served as an editor: assigned manuscripts to reviewers and monitored the peer-review process to ensure fairness and timeliness. Promoted and performed outreach for the annual student journal of the department of psychology, organized virtual events.", "August 2020 – August 2021",
+"Concordia Infant Research Laboratory","Research assistant under Dr Krista Byers-Heinlein", "Performed data entry management and data collection participation with participating children and parents.", "July 2017 – June 2019",
+"West Island Art Hive","Facilitator", "Helped coordinate a community non-profit art studio affiliated with Concordia University's Creative Arts Therapies Department.", "October 2016 – June 2018",
+) %>% 
+  detailed_entries(
+    with=What,
+    what=Role,
+    why=Desc1,
+    when=When
+    )
+
+```
+# Programming experience
+
+```{r}
+tribble(
+  ~ What, ~ Desc1, ~ Desc2,
+  "Programming languages and proficiency", "Statistical analysis: R (advanced), SAS (intermediate), Python (novice)", "Development and markup : Html, CSS & JavaScript (intermediate), Git, TeX & Markdown (novice)"
+  ) %>% 
+  detailed_entries(
+    with=What,
+    why=c(Desc1, Desc2)
+    )
+```
