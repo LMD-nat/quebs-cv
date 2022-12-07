@@ -1,0 +1,176 @@
+---
+name: Nathalie
+surname: Germain
+#position: "Candidate à la maîtrise en épidemiologie à Université Laval"
+address: "Not my real address"
+#qualifications: BA
+phone: +1 514 XXX XXX
+#www: github.com/LMD-nat
+email: "nathalie.germain.5@ulaval.ca"
+#twitter: 
+#github: LMD-nat
+headcolor: 1b1b1b
+# profilepic: nathalie_invite.jpg
+# linkedin: nathalie-germain
+# bibliography: ""
+date: "`r format(Sys.time(), '%M %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tinytex)
+```
+
+# Sommaire
+
+-   Candidate à la maîtrise en épidemiologie avec mémoire, Université Laval.
+-   Projet: *Fardeau des proches-aidants des personnes aînées en transition de l'hôpital à la communauté*. Superviseur de recherche: le Dr Patrick Archambault.
+-   Bilingue en anglais (langue maternelle) et français (Niveau CECRL de C2, très experimenté)
+
+# Formation et diplômes
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "Maitrise en épidemiologie avec mémoire", "2021-2023", "Université Laval", "Québec, Canada", 
+  "Baccalauréat en psychologie, cheminement honors. GPA : 3.84, Graduation avec distinctions", "2016-2019", "Université Concordia", "Montréal, Canada",
+  "Diplôme d’études collégiales – programme arts visuels. Étudiante-athlète, équipe féminine de rugby", "2013-2016", "Collège John Abbott", "Montréal, Canada",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where,)
+```
+
+# Prix et distinctions
+
+```{r}
+tribble( ~ Org, ~ Title, ~ Desc, ~ Year, 
+"Instituts de recherche en santé du Canada (IRSC)", "Bourse d’études supérieures du Canada au niveau de la maitrise", "travaux de recherche de haute qualité ainsi que des réalisations communautaires et universitaires exceptionnelles (prix de 17500$)", "2022",
+"Université Laval", "Bourse de recrutement Joseph-Demers", "excellence académique et ayant présenté un excellent protocole de recherche pour les travaux de mémoire de maîtrise (prix de 7500$)", "2021",
+"Société Canadienne de Psychologie", "Certificat d’excellence universitaire", "ayant présenté un de les meilleurs travaux (dissertation, maîtrise et thèse) au niveau du baccalauréat à l'Université Concordia", "2019",
+"Université Concordia", "Première place (2019), Deuxième place (2018)", "présenter une méthodologie en équipe pour le concours Inter-University Psychology Case Competition", "2018 & 2019",
+"Université Concordia", "Liste du doyen", "ayant maintenue un GPA annuel de 3.75 ", "2016-2017, 2018-2019",
+"Université Concordia", "Garnet Key Society Merit Award", "une contribution exceptionnelle à la 60e Garnet Key Society", "2018",
+"Université Concordia", "Shuffle Entrance Scholarship", "réussite académique exceptionnelle (Bourse de 1000$)", "2016") %>% 
+  detailed_entries(
+    with=Title, 
+    what=glue::glue("Remis(e) pour: {Desc}."), 
+    where=Org, 
+    when=Year
+    )
+```
+
+# Publications
+
+```{=tex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+```
+\noindent
+
+Devine, S., **Germain, N.**, Ehrlich, S., & Eppinger, B. (2022). Changes in the Prevalence of Thin Bodies Bias Young Women's Judgments About Body Size. *Psychological science*, 33(8), 1212--1225. <https://doi.org/10.1177/09567976221082941>. Préinscription : <https://osf.io/e28nd>
+
+**Germain, N.**, Gonzalez‐Barrero, A. M., & Byers‐Heinlein, K. (2022). Gesture development in infancy: Effects of gender but not bilingualism. *Infancy*, 27(4), 663-681. doi: <https://10.1111/infa.12469>. Préinscription : <https://osf.io/gh5q8/>
+
+\vspace{4pt}
+
+# Présentations
+
+```{=tex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+```
+\noindent
+
+\vspace{1pt}
+
+## Présentations orales
+
+**Germain, N.**, Profitt, M., & Eppinger, B. (2021, 23 avril). Individual differences in decision making: effects of Covid-19. **CRDH Cognition BrownBag**, Université Concordia, Montréal, QC.
+
+**Germain, N.** (2020, 21 février). Gestural communication among monolingual and bilingual infants. **Bilingualism Interest Group**, Université Concordia, Montréal, QC.
+
+\vspace{1pt}
+
+## Présentations d'affiche
+
+**Germain, N.**, Archambault, P. (2022, mars). Fardeau des proches-aidants des personnes aînées en transition de l'hôpital à la communauté : une série chronologique interrompue. Affiche virtuel presenté au symposium *Bâtir ensemble le système de santé apprenant du Québec* de **L'Unité de soutien au système de santé apprenant (SSA)**. Longeuil, QC. [Conférence provinciale]
+
+**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2022, juillet). Does bilingualism affect gesture use at 14 months? Affiche presenté à l'**International Conference of Infant Studies (ICIS)**. Ottawa, ON. [Conférence internationale]
+
+Devine, S., **Germain, N.**, Ehrlich, S. & Eppinger, B. (2021, juin). Changes in the prevalence of thin bodies biases young women's judgements about body size. Affiche presenté à la **conference annuele de la Société Canadienne des Sciences du Cerveau, du Comportement, et de la Cognition (SCSCCC)**. Montréal, QC. [Conférence nationale]
+
+**Germain, N.**, Meltzer, A. & Poulin-Dubois, D. (2021, mai). Gestural Communication Among Monolingual and Bilingual Infants. Affiche presenté à la **2021 Association for Pyschological Science Virtual Convention**. Washington, DC. [Conférence internationale]
+
+**Germain, N.**, Profitt, M. & Eppinger, B. (2021, mars). Individual differences in decision making: effects of Covid-19. Affiche presenté à la **Centre for Research in Human Development (CRDH) Annual Conference 2021**. Université Concordia. Montréal, QC. [Conférence provinciale]
+
+**Germain, N.**, Gonzalez-Barrero, A. M., & Byers-Heinlein, K. (2019, mars). Do bilingual babies gesture more than monolinguals as they're learning to speak? Affiche presenté à la **PsychoShorts Annual Conference**. Université d'Ottawa. Ottawa, ON. [Conférence nationale]
+
+\vspace{1pt}
+
+## Écoles d'été et ateliers de recherche
+
+-   École d'automne en introduction aux techniques et outils de l'intelligence artificielle appliqués à la santé (12-14 octobre 2022). **Institut intelligence et données (IID)**, Université Laval.
+
+-   École interdisciplinaire outils & méthodes (29 août-3 septembre, 2022). **École supérieure d'études internationales**, Université Laval.
+
+-   Evidence-Based Clinical Practice Workshop (12-17 juin, 2022). **McMaster Faculty of Health Sciences**, Université McMaster, Hamilton, ON.
+
+# Expériences de travail en recherche
+
+```{r}
+tribble(
+  ~ Lab, ~ Role, ~ Desc1, ~ Desc2, ~ When, ~ Where, 
+  
+  "Centre intégré de santé et de services sociaux de Chaudière-Appalaches", "Chercheure étudiante, Superviseur : Dr Patrick Archambault","Planification des projets de recherche et la réalisation d'analyses statistiques", "Programmation et construction du site web du laboratoire", "Septembre 2021 – présent", "Hôpital Hôtel-Dieu de Lévis", 
+  
+  "Lifespan and Decision Making Laboratory", "Coordonnatrice de recherche, Superviseur : Dr Ben Eppinger","Design, réalisation et rédaction d’études comportementales en psychologie", "Analyse statistique des données recueillies, programmation des tâches, recrutement", "Août 2020 – Août 2021", "Université Concordia",  
+  
+  "Le laboratoire de recherche sur le développement du langage et de la cognition", "Coordonnatrice de recherche, Superviseure : Dre Diane Poulin-Dubois","Allocation des tâches, ressources et projets de recherches aux étudiants bénévoles, recrutement", "Administration financière : système de paie, gestion du budget et fonds de recherche", "Juillet 2019 – Août 2020", "Université Concordia"
+) %>% 
+  detailed_entries(
+    with=Lab, 
+    what=Role, 
+    why=c(Desc1, Desc2),
+    when=When, 
+    where=Where
+    )
+```
+
+# Expériences de bénévolat
+
+```{r}
+tribble(
+  ~ What,~ Role, ~ Desc1, ~ When, ~ Where,
+  
+  "Partenaires communautaires Jeffery Hale (JH Partners)","bénévole, Superviseure: Elise Holloway", "Participé à la gestion du Centre de jour et la Caregivers’ Circle — services de soutien pour des proches aidants", "Juin 2022 – présent","Hôpital Jeffery Hale",
+  
+    "Concordia Journal Of Accessible Psychology","Coordonnatrice des affaires sociales et publiques, Superviseure: Alexa Ruel", "Promotion virtuelle du journal étudiant annuel du département de psychologie, l’organisation des évènements virtuels", "Août 2020 – Août 2021","Université Concordia",
+  
+  "Laboratoire de recherche sur l’enfance de Concordia","Assistante de recherche, Superviseure : Dre Krista Byers-Heinlein", "Gestion des entrées de données et participation à la cueillette de donnée auprès des enfants et parents participant", "Juillet 2017 – Juin 2019","Université Concordia",
+  
+) %>% 
+  detailed_entries(
+    with=What,
+    what=Role,
+    why=Desc1,
+    when=When, 
+    where=Where
+    )
+```
+
+# Compétences particulières
+
+```{r}
+tribble(
+  ~ What, ~ Desc1, ~ Desc2,  ~ Desc3, ~ Desc4,
+  "Langues de programmation", "R (avancée)", "SAS, Html, CSS & JavaScript (intermédiaire)", "Python (débutant)", "Git, TeX & Markdown (débutant)"
+  ) %>% 
+  detailed_entries(
+    with=What,
+    why=c(Desc1, Desc2, Desc3, Desc4)
+    )
+```
